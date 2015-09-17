@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#ffffff">
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+    
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="bottom|center_horizontal" >
+
+	</TableRow>
+
+	<ImageView
+	    android:id="@+id/ivUniten"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:adjustViewBounds="true"
+	    android:gravity="right"
+	    android:maxHeight="100dp"
+	    android:maxWidth="100dp"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/uniten" />
+
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+		
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/rounded_edittext"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:paddingTop="10dip"
+	        android:paddingBottom="10dip"
+	        android:text="Featuring a comprehensive android based application that combines the QR code technology with augmented reality approach providing affordable solutions for retailers to connect their stores online which gives a real and actual shopping experience to the consumers."
+	        android:textColor="#000000"
+	        android:textSize="23dp" />
+
+	</TableRow>
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+
+		<ImageView
+		    android:id="@+id/ivContact"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:adjustViewBounds="true"
+		    android:gravity="right"
+		    android:maxHeight="200dp"
+		    android:maxWidth="200dp"
+		    android:scaleType="fitCenter"
+		    android:src="@drawable/contact" />
+
+	</TableRow>
+	
+	
+	
+</TableLayout>
+</LinearLayout>
+</ScrollView>

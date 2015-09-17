@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textUpdateprofile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Update Profile"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/texFn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textUpdateprofile"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="First Name"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/newfn"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@drawable/rounded_edittext"
+        android:hint="New First Name"
+        android:inputType="text"
+        android:paddingLeft="10dip"
+        android:password="false"
+        android:textColor="#000000"
+        android:singleLine="true"
+    	android:lines="1" />
+
+    <TextView
+        android:id="@+id/textLn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textUpdateprofile"
+        android:layout_marginLeft="13dp"
+        android:gravity="center|left"
+        android:text="Last Name"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/newln"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@drawable/rounded_edittext"
+        android:hint="New Last Name"
+        android:inputType="text"
+        android:paddingLeft="10dip"
+        android:password="false"
+        android:textColor="#000000"
+        android:singleLine="true"
+    	android:lines="1" />
+
+    <TextView
+        android:id="@+id/textOldpass"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center|left"
+        android:text="Old Password"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/oldpass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Old password"
+        android:paddingLeft="10dip"
+        android:password="true"
+        android:textColor="#000000" 
+        android:singleLine="true"
+    	android:lines="1"/>
+
+    <TextView
+        android:id="@+id/textNewpass"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textUpdateprofile"
+        android:layout_marginLeft="13dp"
+        android:gravity="center|left"
+        android:text="New password"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@drawable/rounded_edittext"
+        android:hint="New Password"
+        android:paddingLeft="10dip"
+        android:password="true"
+        android:textColor="#000000" 
+        android:singleLine="true"
+    	android:lines="1"/>
+	 <TableLayout 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:shrinkColumns="*"  
+    android:stretchColumns="*" 
+    android:background="#ffffff" > 
+    
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   
+	    android:gravity="center_horizontal" >
+
+	    <TextView
+	        android:id="@+id/textAddress"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="Address"
+	        android:textColor="#000000"
+	        android:textSize="17dp" />
+
+	</TableRow> 
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+
+	    android:gravity="center_horizontal" >
+
+		<EditText
+		    android:id="@+id/newAddress1"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight="1"
+		    android:background="@drawable/rounded_edittext"
+		    android:ems="10"
+		    android:hint="Address Line 1"
+		    android:inputType="text"
+		    android:padding="10dip"
+		    android:textColor="#000000"
+		    android:textSize="17dp"
+		    android:singleLine="true"
+    		android:lines="1" />
+
+	</TableRow>
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+
+	    <EditText
+	        android:id="@+id/newAddress2"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Address Line 2"
+	        android:inputType="text"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp" 
+	        android:singleLine="true"
+    		android:lines="1"/>
+
+	</TableRow>
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+
+	    <TextView
+	        android:id="@+id/textCity"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="City"
+	        android:textColor="#000000"
+	        android:textSize="17dp" />
+
+	    <TextView
+	        android:id="@+id/textState"
+	        android:layout_marginLeft="-100dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="State"
+	        android:textColor="#000000"
+	        android:textSize="17dp" />
+
+	</TableRow>
+	
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"> 
+
+	    <EditText
+	        android:id="@+id/newCity"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="230dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="City"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp" 
+	        android:singleLine="true"
+    		android:lines="1"/>
+    	
+	    <EditText
+	        android:id="@+id/newState"
+	        android:layout_marginLeft="-110dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:gravity="left"
+	        android:hint="State"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp" 
+	        android:singleLine="true"
+    		android:lines="1"/>
+
+	 </TableRow>
+    
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">
+
+		<TextView
+		    android:id="@+id/textPostal"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Postal Code"
+		    android:textColor="#000000"
+		    android:textSize="17dp" />
+
+	     <TextView
+	         android:id="@+id/textCountry"
+	         android:layout_marginLeft="-100dp"
+	         android:layout_marginTop="10dp"
+	         android:layout_weight="1"
+	         android:gravity="left"
+	         android:text="Country"
+	         android:textColor="#000000"
+	         android:textSize="17dp" />
+
+	</TableRow>
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+
+	    <EditText
+	        android:id="@+id/newPostal"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="230dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Postal Code"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp" 
+	        android:singleLine="true"
+    		android:lines="1"/>
+    
+	    <EditText
+	        android:id="@+id/newCountry"
+	        android:layout_marginLeft="-110dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Country"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp" 
+	        android:singleLine="true"
+    		android:lines="1"/>
+
+    </TableRow>
+    
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+	    <TextView
+	        android:id="@+id/textPhone"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="Phone"
+	        android:textColor="#000000"
+	        android:textSize="17dp" />
+
+	</TableRow>
+	
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+	    <EditText
+	        android:id="@+id/newPhone"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="phone"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="17dp"
+	        android:singleLine="true"
+    		android:lines="1" />
+
+    </TableRow>
+     
+	</TableLayout>
+    
+    <Button
+        android:id="@+id/btchangepass"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Update Profile"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/btcancel"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/alertpass"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btchangepass"
+        android:textColor="#000000" />
+
+</LinearLayout>
+
+</ScrollView>

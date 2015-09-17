@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white" >
+	
+    <ImageView android:id="@+id/image"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dip"/>
+    
+    <!-- Name Label -->
+<TableLayout
+    android:background="#000000"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="20dp">
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Product Name"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Name -->
+	<TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textSize="17dip" />
+	</TableRow>
+   
+	<!-- Price Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Price"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Price -->
+	<TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:id="@+id/inputPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Description Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Description"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input description -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="6"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+    <!-- Quantity Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Please enter quantity"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Quantity -->
+	<TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <EditText
+        android:id="@+id/inputQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:lines="1"
+        android:singleLine="true"
+        android:textSize="17dip" />
+
+	</TableRow>
+</TableLayout>
+
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Button Create Product -->
+        
+        <Button
+            android:id="@+id/btnAddtocart"
+            style="@style/btnStyleShakespeare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Add to cart"
+            android:textColor="#ffffff" />
+        
+        <!-- Button Create Product -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Cancel"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/product_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>

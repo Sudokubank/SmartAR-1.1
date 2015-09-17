@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white" >
+<TableLayout 
+   
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:shrinkColumns="*"  
+    android:stretchColumns="*" 
+    android:background="#ffffff" > 
+    
+    <!-- Row 1 with single column -->
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+    	<TextView
+	        android:id="@+id/textBillingAddress"
+	        android:layout_span="3"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:padding="18dip"
+	        android:gravity="center"
+	        android:text="Update Shipping Address"
+	        android:textColor="#000000"
+	        android:textSize="17dp" />
+	</TableRow>  
+	<!-- Row 1 with single column -->
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+	    <TextView
+	        android:id="@+id/textBillName"
+	        android:layout_marginLeft="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="Name"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	</TableRow> 
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+
+	    <EditText
+	        android:id="@+id/billName"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Name"
+	        android:inputType="text"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="15dp"
+	        android:singleLine="true"
+    		android:lines="1" />
+
+	</TableRow> 
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   
+	    android:gravity="center_horizontal" >
+
+	    <TextView
+	        android:id="@+id/textAddress"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="Address"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	</TableRow> 
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+
+	    android:gravity="center_horizontal" >
+
+		<EditText
+		    android:id="@+id/billAddress1"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_marginTop="5dp"
+		    android:layout_weight="1"
+		    android:background="@drawable/rounded_edittext"
+		    android:ems="10"
+		    android:hint="Address Line 1"
+		    android:inputType="text"
+		    android:padding="10dip"
+		    android:textColor="#000000"
+		    android:textSize="15dp" 
+		    android:singleLine="true"
+    		android:lines="1"/>
+
+	</TableRow>
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+
+	    <EditText
+	        android:id="@+id/billAddress2"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Address Line 2"
+	        android:inputType="text"
+	        android:padding="10dip"
+	        android:textColor="#000000"
+	        android:textSize="15dp"
+	        android:singleLine="true"
+    		android:lines="1" />
+
+	</TableRow>
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">  
+
+	    <TextView
+	        android:id="@+id/textCity"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="City"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	    <TextView
+	        android:id="@+id/textState"
+	        android:layout_marginLeft="-100dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="State"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	</TableRow>
+	
+	
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"> 
+
+	    <EditText
+	        android:id="@+id/billCity"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="230dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="City"
+	        android:inputType="text"
+	        android:lines="1"
+	        android:padding="10dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+    	
+	    <EditText
+	        android:id="@+id/billState"
+	        android:layout_marginLeft="-110dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:gravity="left"
+	        android:hint="State"
+	        android:inputType="text"
+	        android:lines="1"
+	        android:padding="10dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	 </TableRow>
+    
+	<TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal">
+
+		<TextView
+		    android:id="@+id/textPostal"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_weight="1"
+		    android:gravity="left"
+		    android:text="Postal Code"
+		    android:textColor="#000000"
+		    android:textSize="15dp" />
+
+	     <TextView
+	         android:id="@+id/textCountry"
+	         android:layout_marginLeft="-100dp"
+	         android:layout_marginTop="10dp"
+	         android:layout_weight="1"
+	         android:gravity="left"
+	         android:text="Country"
+	         android:textColor="#000000"
+	         android:textSize="15dp" />
+
+	</TableRow>
+	
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+
+	    <EditText
+	        android:id="@+id/billPostal"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="230dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Postal Code"
+	        android:inputType="number"
+	        android:lines="1"
+	        android:padding="10dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+    
+	    <EditText
+	        android:id="@+id/billCountry"
+	        android:layout_marginLeft="-110dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="Country"
+	        android:inputType="text"
+	        android:lines="1"
+	        android:padding="10dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+    </TableRow>
+    
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+	    <TextView
+	        android:id="@+id/textPhone"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="1"
+	        android:gravity="left"
+	        android:text="Phone"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+	</TableRow>
+	
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+	    <EditText
+	        android:id="@+id/billPhone"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/rounded_edittext"
+	        android:hint="phone"
+	        android:inputType="phone"
+	        android:lines="1"
+	        android:padding="10dip"
+	        android:singleLine="true"
+	        android:textColor="#000000"
+	        android:textSize="15dp" />
+
+    </TableRow>
+	
+     
+	<TableRow
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" >
+	    <Button
+	        android:id="@+id/btnNext"
+	        style="@style/btnStyleShakespeare"
+	        android:layout_marginLeft="100dp"
+	        android:layout_marginRight="100dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="Next"
+	        android:textColor="#ffffff"
+	        android:textSize="15dp" />
+
+     </TableRow>
+     
+</TableLayout>
+</ScrollView>

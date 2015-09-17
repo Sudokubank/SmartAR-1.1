@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white" >
+	
+ 	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+ 	
+    <!--First Name Label -->
+<TableLayout
+    android:background="#000000"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="20dp">
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="First Name"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input First Name -->
+	<TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:id="@+id/inputFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textSize="17dip" />
+	</TableRow>
+   
+	<!-- LastName Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Last Name"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Last Name -->
+	<TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:id="@+id/inputLastName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Email Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Email"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Email -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+    <!-- Username Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Username"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Username -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+	
+     <!-- Address1 Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Address"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Address1 -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputAddress1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="2"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+    <!-- Input Address2 -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputAddress2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="2"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+     <!-- City Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="City"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input City -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+     <!-- State Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="State"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Email -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+     <!-- Postal Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Postal Code"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Postal -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputPostal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+     <!-- Country Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Country"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Email -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    
+    <TextView
+        android:id="@+id/inputCountry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+	
+     <!-- Phone Label -->
+	<TableRow 
+	    android:background="#0079D4"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Phone"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dip" />
+	</TableRow>
+	
+    <!-- Input Email -->
+    <TableRow 
+	    android:background="#FFFFFF"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_margin="1dp">
+
+    <TextView
+        android:id="@+id/inputPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.82"
+        android:gravity="top"
+        android:lines="1"
+        android:textSize="17dip" />
+
+	</TableRow>
+</TableLayout>
+
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Button Create Product -->
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            style="@style/btnStyleShakespeare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textColor="#ffffff" />
+
+        <!-- Button Create Product -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnProfileCancel"
+        style="@style/btnStyleShakespeare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Back"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/product_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
